@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body {
+ background-color: #ffffff;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+ background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Organic-Spices-blog.jpg);
+ background-position: center;
+ background-size: cover;
+}
+section, .form{
+    display: flex;
+}
+
+section{
+    flex-direction: row;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 500px;
+}
+iframe{
+    width: 420px;
+    height: 490px;
+    padding: 1px;
+    margin: 10px;
+}    
+.form{
+    position: relative;
+    flex-direction: column;
+    padding: 25px;
+    width: 420px;
+    height: 500px;
+    gap: 3em;
+    align-items: center;
+    background-color: whitesmoke;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+h1{
+    position: relative;
+}
+
+h1 ::after{
+    content: "";
+    width: 40px;
+    height: 5px;
+    background-color: #141414;
+    position: absolute;
+    bottom: -8px;
+    left: 30%;
+}
+::placeholder{
+    color: #141414;
+    font-size: 300;
+    font-weight: 12px;
+}
+
+input, textarea {
+    width: 310px;
+    padding: 5px 10px;
+    outline: none;
+    border: 0;
+}
+button{
+    border: 0;
+    cursor: pointer;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.register {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .social-media-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+   }
+
+.social-icon-link {
+    margin: 0 10px;
+    text-decoration: none;
+   }
+
+.social-icon-link img {
+    width: 40px;
+    height: 40px;
+  }
+
+  
+  @media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+    .form, .map iframe {
+        width: 100%;
+        height: auto;
+    }
+    .form {
+        padding: 20px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+    h1::after {
+        left: 0;
+    }
+}
